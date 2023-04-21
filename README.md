@@ -1,6 +1,6 @@
 # HuggingFace Pretrained Large Language Models
 
-## Conda 
+### Conda Environment Setup
 ```
 conda create -n HF python=3.7
 conda activate HF
@@ -9,7 +9,7 @@ pip install git+https://github.com/huggingface/transformers
 pip install datasets accelerate evaluate scikit-learn
 ```
 
-## Download Models/Tokenizer + FineTuning (using single GPU, multple GPUs)
+### Download Models/Tokenizer + FineTuning (using single GPU, multple GPUs)
 ```
 HuggingFace_Transformers
 ├── BERT_110M
@@ -37,10 +37,11 @@ HuggingFace_Transformers
     ├── download_models.py
     ├── finetune.sh
     └── run_clm.py
+```
 
 
-## BERT fine-tuning using run_mlm.py (Masked Language Model)
-## Tested on 2 x 12GB memory GPUs (NVIDIA TITAN V)
+### BERT fine-tuning using run_mlm.py (Masked Language Model)
+### Tested on 2 x 12GB memory GPUs (NVIDIA TITAN V)
 ```
 BERT 110M='bert-base-uncased'
 #############################
@@ -53,8 +54,8 @@ run over 1 x 12G GPUs => consumed 8.5 GB over one GPUs
 run over 2 x 12G GPUs => consumed 13 GB over 2 GPUs
 ```
 
-## GPT2 fine-tuning using run_clm.py (Causal Language Model)
-## Tested on 2 x 12GB memory GPUs (NVIDIA TITAN V)
+### GPT2 fine-tuning using run_clm.py (Causal Language Model)
+### Tested on 2 x 12GB memory GPUs (NVIDIA TITAN V)
 ```
 GPT2_1.5B
 #########
