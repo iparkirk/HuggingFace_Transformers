@@ -1,6 +1,7 @@
 # HuggingFace Pretrained Large Language Models
 
 ## Conda 
+```
 conda create -n HF python=3.7
 conda activate HF
 pip install torch 
@@ -35,3 +36,4 @@ HuggingFace_Transformers
     ├── finetune.sh
     └── run_clm.py
 
+```
